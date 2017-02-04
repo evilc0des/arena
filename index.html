@@ -7,29 +7,46 @@
         <link rel="stylesheet" href="./css/index.css">
     </head>
     <body>
-        <div class="container main-container"></div>
+        <div class="container main-container">
+            <div class="main-page"></div>
+            <div class="csgo-page"></div>
+            <div class="pes-page"></div>
+            <div class="dota-page"></div>
+            <div class="nfs-page"></div>
+        </div>
         <div class="container-overlay"></div>
         <div class="content-overlay">
-            <div class="col-sm-9"></div>
-            <div class="col-sm-3">
+            <div class="col-sm-9 main-view"></div>
+            <div class="col-sm-3 side-view">
                 <div class="content-logo">
                     <img class="main-logo" src='./assets/logo.png'>
                 </div>
-                <div class="content-caption">
-                    <p>You know when nothing else matter's<br>
-                    Seconds left on the clock<br>
-                    Adrenaline pumping through your veins<br>
-                    All the sweat, blood and tear has led to this<br>
-                    And the last obstacle is <b>YOU</b></p>
+                <div class="main-page-content">
+                    <div class="content-caption">
+                        <p>You know when nothing else matter's<br>
+                        Seconds left on the clock<br>
+                        Adrenaline pumping through your veins<br>
+                        All the sweat, blood and tear has led to this<br>
+                        And the last obstacle is <b>YOU</b></p>
+                    </div>
+                    <div class="content-go-btn">
+                        <button type="button" class="btn btn-outline-danger main-enter-btn">Enlist</button> <span class="start-date">STARTS 9TH FEB</span>
+                    </div>
                 </div>
-                <div class="content-go-btn">
-                    <button type="button" class="btn btn-outline-danger">Enlist</button> <span class="start-date">STARTS 9TH FEB</span>
+                <div class="list-page-content">
+                    <ul class="game-list">
+                        <li class="csgo-select">Counter Strike: Global Offensive</li>
+                        <li class="pes-select">PES 2017</li>
+                        <li class="dota-select">DOTA 2</li>
+                        <li class="nfs-select">NFS: Most Wanted</li>
+                    </ul>
                 </div>
             </div>
         </div>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
         <script src="./js/index.js"></script>
     </body>
 </html>
