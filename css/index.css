@@ -3,11 +3,38 @@ body {
 }
 .main-container {
     margin: 0;
+    height: 100vh;
+    background-color: black;
+}
+.main-container .main-page{
     background: url('../assets/bg1.jpg');
     height: 100vh;
     background-size: cover;
 }
-
+.main-container .csgo-page{
+    background: url('../assets/bg.jpg');
+    height: 100vh;
+    background-size: cover;
+    display: none;
+}
+.main-container .pes-page{
+    background: url('../assets/bg2.jpg');
+    height: 100vh;
+    background-size: cover;
+    display: none;
+}
+.main-container .dota-page{
+    background: url('../assets/bg3.jpg');
+    height: 100vh;
+    background-size: cover;
+    display: none;
+}
+.main-container .nfs-page{
+    background: url('../assets/bg4.jpg');
+    height: 100vh;
+    background-size: cover;
+    display: none;
+}
 .container-overlay {
     position: absolute;
     z-index: 1000;
@@ -29,6 +56,10 @@ body {
     width: 100vw;
     top:0;
     background-size: cover;
+}
+
+.side-view {
+    padding-right: 0px;
 }
 
 .content-logo {
@@ -55,4 +86,22 @@ body {
 .start-date {
     padding-left: 10px;
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+.list-page-content {
+    display: none;
+}
+
+.game-list {
+    list-style: none;
+}
+
+.game-list li{
+    padding: 15px;
+}
+
+.game-list li:hover{
+    cursor: pointer;
+    color: black;
+    background-color: #f45342;
 }
